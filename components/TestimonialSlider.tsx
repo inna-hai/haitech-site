@@ -13,7 +13,7 @@ export default function TestimonialSlider(){
   const prev = ()=> setI((i-1+samples.length)%samples.length)
 
   return (
-    <section className="bg-gray-50 p-6 rounded-2xl">
+    <section className="bg-gradient-to-r from-haitech-blue/6 to-haitech-purple/6 p-6 rounded-2xl">
       <div className="flex items-start justify-between">
         <div>
           <h3 className="text-lg font-semibold">מה ששותפים וההורים אמרו</h3>
@@ -25,8 +25,8 @@ export default function TestimonialSlider(){
         </div>
       </div>
 
-      <div className="mt-4">
-        <blockquote className="text-gray-700">“{samples[i].text}”</blockquote>
+      <div className="mt-4 bg-white p-6 rounded-xl shadow-md">
+        <blockquote className="text-gray-700 text-lg">“{samples[i].text}”</blockquote>
         <cite className="block mt-3 text-sm text-gray-500">— {samples[i].name}</cite>
       </div>
     </section>

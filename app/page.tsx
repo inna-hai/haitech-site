@@ -8,18 +8,24 @@ export default function Home(){
 
   return (
     <>
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-12">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-14">
         <div>
-          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">דרך ההייטק — קורסים חדשניים לטכנולוגיה</h1>
-          <p className="mt-4 text-gray-600 text-lg">תכניות מותאמות גיל, שיטות מעניינות ושילוב AI בפדגוגיה עבור בתי ספר, משפחות ומבוגרים.</p>
-          <div className="mt-6 flex items-center gap-3">
-            <Link href="/courses" className="px-5 py-3 bg-gradient-to-r from-haitech-blue to-haitech-purple text-white rounded-lg shadow">לכל הקורסים</Link>
-            <Link href="/schools" className="px-4 py-3 border rounded-lg text-gray-700">פתרונות לבתי ספר</Link>
+          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">דרך ההייטק — קורסים חדשניים בטכנולוגיה ו-AI</h1>
+          <p className="mt-4 text-gray-600 text-lg">תכניות מעשיות שמכינות לעתיד: פרויקטים, רובוטיקה, פיתוח ויישומי בינה מלאכותית בשילוב פדגוגיה מודרנית.</p>
+          <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+            <Link href="/courses" className="px-6 py-4 bg-gradient-to-r from-haitech-blue to-haitech-purple text-white rounded-xl shadow-lg text-center">לכל הקורסים</Link>
+            <Link href="/schools" className="px-5 py-4 border rounded-xl text-gray-700">פתרונות לבתי ספר</Link>
+          </div>
+          <div className="mt-6 flex items-center gap-3 flex-wrap text-sm text-gray-500">
+            <span className="px-3 py-1 bg-gray-100 rounded-full">הצטרפו ל-1,200 תלמידים</span>
+            <span className="px-3 py-1 bg-gray-100 rounded-full">הכשרות מקצועיות לצוותי הוראה</span>
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-haitech-azure/20 to-haitech-purple/10 rounded-2xl p-6">
-          <img src="/hero-illustration.svg" alt="ai-education" className="w-full h-56 object-cover rounded-lg" />
+        <div className="rounded-2xl p-6 flex items-center justify-center">
+          <div className="w-full max-w-md aspect-video rounded-xl bg-gradient-to-br from-haitech-blue/20 to-haitech-purple/10 flex items-center justify-center animate-float">
+            <img src="/hero-illustration.svg" alt="ai-education" className="w-3/4 h-3/4 object-contain opacity-90" />
+          </div>
         </div>
       </section>
 
